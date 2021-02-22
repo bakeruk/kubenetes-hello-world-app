@@ -17,3 +17,4 @@ lint:
 .PHONY: tools
 tools:
 	go install golang.org/x/lint/golint
+	go install github.com/cosmtrek/air
