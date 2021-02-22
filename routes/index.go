@@ -5,8 +5,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// InitRoutes initialises all routes
-func InitRoutes(router *gin.Engine) {
+// InitAllRoutes initialises all routes
+func InitAllRoutes(router *gin.Engine) {
 	// Initialises /v1 routes
 	routesV1.InitV1Routes(router)
 }
