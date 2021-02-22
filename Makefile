@@ -6,6 +6,10 @@ build:
 clean:
 	go clean -i .
 
+.PHONY: dev
+dev:
+	@air
+
 .PHONY: lint
 lint:
 	golint ./...

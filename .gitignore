@@ -1,2 +1,5 @@
 # Mac generated files
 .DS_Store
+
+# Go Air generated files
+/tmp

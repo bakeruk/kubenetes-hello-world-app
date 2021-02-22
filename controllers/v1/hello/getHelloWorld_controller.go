@@ -8,5 +8,6 @@ import (
 
 // List out "hello world"
 func List(context *gin.Context) {
-	context.JSON(http.StatusOK, "Hello world")
+	data := map[string]string{"message": "Hello world"}
+	context.JSON(http.StatusOK, data)
 }
