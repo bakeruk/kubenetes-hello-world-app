@@ -1,7 +1,7 @@
 package routes
 
 import (
-	routesV1 "github.com/bakeruk/kubernetes-hello-world-app/routes/v1"
+	routesV1 "github.com/bakeruk/kubernetes-hello-world-api/routes/v1"
 	"github.com/gin-gonic/gin"
 )
 

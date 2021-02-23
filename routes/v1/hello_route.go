@@ -1,7 +1,7 @@
 package routesv1
 
 import (
-	helloController "github.com/bakeruk/kubernetes-hello-world-app/controllers/v1/hello"
+	helloController "github.com/bakeruk/kubernetes-hello-world-api/controllers/v1/hello"
 	"github.com/gin-gonic/gin"
 )
 

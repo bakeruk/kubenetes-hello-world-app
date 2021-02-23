@@ -10,6 +10,10 @@ clean:
 dev:
 	@air
 
+.PHONY: docker
+docker:
+	@docker build -t github.com/bakeruk/kubernetes-hello-world-api .
+
 .PHONY: lint
 lint:
 	golint ./...
