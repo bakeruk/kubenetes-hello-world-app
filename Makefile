@@ -6,6 +6,7 @@ build:
 clean:
 	go clean -i .
 
+# Run and watch for file changes during development
 .PHONY: dev
 dev:
 	@air
@@ -14,6 +15,7 @@ dev:
 docker-build:
 	@docker build -t hello-world-api .
 
+# Intended for https://github.com/bakeruk/kubernetes-hello-world-kustomization
 .PHONY: docker-push-local
 docker-push-local:
 	@docker tag hello-world-api:latest localhost:5000/hello-world-api:latest && \
