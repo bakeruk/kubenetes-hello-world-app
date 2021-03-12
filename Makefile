@@ -10,9 +10,17 @@ clean:
 dev:
 	@air
 
-.PHONY: docker
-docker:
-	@docker build -t github.com/bakeruk/kubernetes-hello-world-api .
+.PHONY: docker-build
+docker-build:
+	@docker build -t hello-world-api .
+
+.PHONY: docker-push-local
+docker-push-local:
+	@docker tag hello-world-api:latest localhost:5000/hello-world-api:latest && \
+	docker push localhost:5000/hello-world-api:latest
+
+.PHONY: docker-build-and-push-local
+docker-build-and-push-local: docker-build docker-push-local
 
 .PHONY: lint
 lint:
